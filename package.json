@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Crisandryj/ToDo/issues"
   },
-  "homepage": "https://github.com/Crisandryj/ToDo#readme"
+  "homepage": "https://github.com/Crisandryj/ToDo#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
 }
