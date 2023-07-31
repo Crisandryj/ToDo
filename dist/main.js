@@ -1,0 +1,1 @@
+(()=>{"use strict";let s=new class{constructor(s){this.name}}("go");console.log(s)})();
