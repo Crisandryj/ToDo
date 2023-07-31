@@ -1,1 +1,1 @@
-(()=>{"use strict";let s=new class{constructor(s){this.name}}("go");console.log(s)})();
+(()=>{"use strict";new class{constructor(e){this.name=e}set setName(e){this.name=e}get getName(){console.log(this.name)}}("go").getName})();
