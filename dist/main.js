@@ -1,1 +1,1 @@
-(()=>{"use strict";new class{constructor(e){this.name=e}set setName(e){this.name=e}get getName(){console.log(this.name)}}("go").getName})();
+(()=>{"use strict";let t=new class{constructor(t,i,s,e){this.title=t,this.description=i,this.dueDate=s,this.priority=e}}("go","hi hi","7/1/19","high");console.log(t.title)})();

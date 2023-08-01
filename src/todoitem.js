@@ -1,14 +1,10 @@
 class ToDoItem{
 
-  constructor(name){
-    this.name = name;
-  }
-
-  set setName(name){
-    this.name = name;
-  }
-  get getName(){
-    console.log(this.name)
+  constructor(title,description,dueDate,priority){
+    this.title = title;
+    this.description = description;
+    this.dueDate = dueDate;
+    this.priority = priority;
   }
 
 
