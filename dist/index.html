@@ -14,19 +14,29 @@
     <button id ="home">Home</button>
   </nav>
   <div id="content">
-  <form action="signup.html" method="post" id="signup">
-    <h1>Sign Up</h1>
+  <form method="post" id="signup">
+    <h1>New Item</h1>
     <div class="field">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your fullname" />
+      <label for="name">Title:</label>
+      <input type="text" id="title" name="title" placeholder="Enter your title" />
       <small></small>
     </div>
     <div class="field">
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" placeholder="Enter your email address" />
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" placeholder="Enter your item description" />
       <small></small>
     </div>
-    <button type="submit">Subscribe</button>
+    <div class="field">
+      <label for="dueDate">Due Date:</label>
+      <input type="text" id="dueDate" name="dueDate" placeholder="Enter your item Due Date" />
+      <small></small>
+    </div>
+    <div class="field">
+      <label for="priority">Priority:</label>
+      <input type="text" id="priority" name="priority" placeholder="Priority?" />
+      <small></small>
+    </div>
+    <button type="submit">Create</button>
   </form>
   
 </body>
