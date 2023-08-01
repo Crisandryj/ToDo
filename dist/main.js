@@ -1,0 +1,1 @@
+(()=>{"use strict";new class{constructor(t){this.name=t,this.items=[]}setItem(t){this.items.push(t)}getItems(){return this.items}}("Default")})();
