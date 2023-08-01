@@ -1,1 +1,1 @@
-(()=>{"use strict";let t=new class{constructor(t,i,s,e){this.title=t,this.description=i,this.dueDate=s,this.priority=e}}("go","hi hi","7/1/19","high");console.log(t.title)})();
+(()=>{"use strict";let t=new class{constructor(t,e,i,s,o){this.title=t,this.description=e,this.dueDate=i,this.priority=s,this.complete=o}markComplete(){this.complete=!0}unmarkComplete(){this.complete=!1}}("go","hi hi","7/1/19","high");console.log(t.title)})();
