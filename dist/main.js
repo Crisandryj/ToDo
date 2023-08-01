@@ -1,1 +1,1 @@
-(()=>{"use strict";!function(){const t=document.querySelector("#content"),e=document.createElement("h1");e.textContent="Todo List",t.appendChild(e)}(),new class{constructor(t){this.name=t,this.items=[]}setItem(t){this.items.push(t)}getItems(){return this.items}}("Default"),document.addEventListener("click")})();
+(()=>{"use strict";document.querySelector("#content"),homeDom(),new class{constructor(t){this.name=t,this.items=[]}setItem(t){this.items.push(t)}getItems(){return this.items}}("Default"),document.addEventListener("click")})();
