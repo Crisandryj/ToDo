@@ -17,4 +17,5 @@ homeDom()
 //create default project to add items
 let defaultProject = new Project("Default")
 
-document.addEventListener('click', )
+//select list form
+const itemListForm = document.getElementById("itemList")
