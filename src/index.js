@@ -19,3 +19,15 @@ let defaultProject = new Project("Default")
 
 //select list form
 const itemListForm = document.getElementById("itemList")
+
+itemListForm.addEventListener('submit', (event) => {
+  itemListForm['title'].value
+  itemListForm['description'].value
+  itemListForm['dueDate'].value
+  itemListForm['priority'].value
+  // stop form submission
+  event.preventDefault();
+ 
+});
+
+console.log(itemListForm['name'])
