@@ -26,6 +26,8 @@ itemListForm.addEventListener('submit', (event) => {
   let description = itemListForm['description'].value
   let dueDate = itemListForm['dueDate'].value
   let priority = itemListForm['priority'].value
+  let item = new ToDoItem(title,description,dueDate,priority)
+  itemListForm.reset()
   // stop form submission
   event.preventDefault();
 });
