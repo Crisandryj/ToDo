@@ -21,10 +21,14 @@ let list = document.querySelector('.items')
 
 //Add item to list
 function updateList (i){
-  let item = document.createElement('li')
-  item.textContent = i.title
+  let item = document.createElement('input')
+  item.setAttribute('type','checkbox')
+  item.setAttribute('id',i.title)
+  let itemName = document.createElement('label')
+  itemName.textContent = i.title
   console.log(item)
-  list.appendChild(item)
+  list.appendChild(itemName)
+  itemName.appendChild(item)
 }
 
 btn.addEventListener('click', updateList)
