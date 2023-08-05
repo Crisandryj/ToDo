@@ -14,7 +14,6 @@ const btn = document.querySelector('#projects')
 //add heading to home page
 function homeDom(){
   const heading = document.createElement('h1')
-  heading.textContent = "All List"
   content.appendChild(heading)
 }
 //select list
