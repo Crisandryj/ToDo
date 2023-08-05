@@ -22,7 +22,7 @@ let list = document.querySelector('.items')
 
 function updateList (){
 defaultProject.items.forEach((i)=>{
-  let item = document.createElement('p')
+  let item = document.createElement('li')
   item.textContent = i.title
   console.log(item)
   list.appendChild(item)
@@ -49,6 +49,7 @@ itemListForm.addEventListener('submit', (event) => {
   let item = new ToDoItem(title,description,dueDate,priority)
   //add to defualt project
   defaultProject.items.push(item)
+  updateList()
   //clear form
   itemListForm.reset()
   // stop form submission
