@@ -19,6 +19,7 @@ function homeDom(){
 //select list
 let list = document.querySelector('.items')
 
+//Add item to list
 function updateList (i){
   let item = document.createElement('li')
   item.textContent = i.title
@@ -30,8 +31,6 @@ btn.addEventListener('click', updateList)
 
 //display home heading
 homeDom()
-
-
 
 //select list form
 const itemListForm = document.getElementById("itemList")
