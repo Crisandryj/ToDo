@@ -20,13 +20,11 @@ function homeDom(){
 //select list
 let list = document.querySelector('.items')
 
-function updateList (){
-defaultProject.items.forEach((i)=>{
+function updateList (i){
   let item = document.createElement('li')
   item.textContent = i.title
   console.log(item)
   list.appendChild(item)
-})
 }
 
 btn.addEventListener('click', updateList)
@@ -49,7 +47,7 @@ itemListForm.addEventListener('submit', (event) => {
   let item = new ToDoItem(title,description,dueDate,priority)
   //add to defualt project
   defaultProject.items.push(item)
-  updateList()
+  updateList(item)
   //clear form
   itemListForm.reset()
   // stop form submission
