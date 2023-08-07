@@ -5,7 +5,6 @@ import {Project} from "./project.js";
 //create default project to add items
 let defaultProject = new Project("Default")
 
-
 //select container
 const content = document.querySelector('#content')
 //select projects button
@@ -16,6 +15,9 @@ function homeDom(){
   const heading = document.createElement('h1')
   content.appendChild(heading)
 }
+//display home heading
+homeDom()
+
 //select list
 let list = document.querySelector('.items')
 
@@ -25,6 +27,7 @@ function updateList (i){
   item.setAttribute('type','checkbox')
   item.setAttribute('id',i.title)
   let itemName = document.createElement('label')
+  itemName.setAttribute('for', "done")
   itemName.textContent = i.title
   console.log(item)
   list.appendChild(itemName)
@@ -33,8 +36,6 @@ function updateList (i){
 
 btn.addEventListener('click', updateList)
 
-//display home heading
-homeDom()
 
 //select list form
 const itemListForm = document.getElementById("itemList")
