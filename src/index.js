@@ -1,5 +1,5 @@
-import { ToDoItem } from './todoitem.js';
-import { Project } from './project.js';
+import { ToDoItem } from './todoitem';
+import { Project } from './project';
 
 // create default project to add items
 const defaultProject = new Project('Default');
