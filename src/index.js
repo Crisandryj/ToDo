@@ -37,6 +37,10 @@ function updateList (i){
 btn.addEventListener('click', updateList)
 
 
+let checkbox = document.querySelector("input[name=checkbox]");
+
+checkbox.addEventListener('change',alert('hi'))
+
 //select list form
 const itemListForm = document.getElementById("itemList")
 
