@@ -6,8 +6,7 @@ const defaultProject = new Project('Default');
 
 // select container
 const content = document.querySelector('#content');
-// select projects button
-const btn = document.querySelector('#projects');
+
 
 // add heading to home page
 function homeDom() {
@@ -24,19 +23,17 @@ const list = document.querySelector('.items');
 function updateList(i) {
   const item = document.createElement('input');
   item.setAttribute('type', 'checkbox');
-  item.setAttribute('id', i.title);
+  item.setAttribute('id', 'checkbox');
   const itemName = document.createElement('label');
   itemName.setAttribute('for', 'done');
   itemName.textContent = i.title;
   list.appendChild(itemName);
   itemName.appendChild(item);
 }
-
+// select projects button
+const btn = document.querySelector('#projects');
+// listen to btn
 btn.addEventListener('click', updateList);
-
-const checkbox = document.querySelector('input[name=checkbox]');
-
-checkbox.addEventListener('change', alert('hi'));
 
 // select list form
 const itemListForm = document.getElementById('itemList');
