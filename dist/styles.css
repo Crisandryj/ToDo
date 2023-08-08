@@ -11,5 +11,12 @@ menu{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+}
+
+.option {
+  visibility: hidden;
+}
+
+.option .visible{
+  visibility: visible;
 }

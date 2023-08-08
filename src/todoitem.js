@@ -11,6 +11,7 @@ class ToDoItem{
   markComplete(){
     this.complete = true;
   }
+
   unmarkComplete(){
     this.complete = false;
   }
