@@ -28,6 +28,6 @@
   opacity: 0;
 }
 
- .dropdown > link:focus + .dropdown-menu{
+ .dropdown > .link:focus + .dropdown-menu { 
   opacity: 1;
  }
