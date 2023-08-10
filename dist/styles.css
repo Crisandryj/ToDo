@@ -9,6 +9,9 @@
   padding: 0;
 }
 
+.dropdown > .link:focus{
+  color: black;
+}
 .link:hover{
   color: black;
 }
