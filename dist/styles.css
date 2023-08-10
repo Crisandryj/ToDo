@@ -26,9 +26,13 @@
   border-radius: .25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   opacity: 0;
-  transition: opacity 150ms ease-in-out ;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
  
  .dropdown > .link:focus + .dropdown-menu { 
+  transform: translateY(0px);
   opacity: 1;
+  pointer-events: auto;
  }
