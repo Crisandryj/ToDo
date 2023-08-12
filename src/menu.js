@@ -16,4 +16,4 @@ document.addEventListener("click", (e) => {
 })
 }
 
-export {dropDownFunc} 
+export default dropDownFunc
