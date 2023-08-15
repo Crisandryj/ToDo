@@ -1,1 +1,1 @@
-(()=>{"use strict";var e={};(e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})})(e),(0,e.dropDownFunc)()})();
+(()=>{"use strict";document.addEventListener("click",(t=>{const e=t.target.matches("[data-dropdown-button]");if(!e&&null!=t.target.closest("[data-dropdown]"))return;let a;e&&(a=t.target.closest("[data-dropdown]"),a.classList.toggle("active")),document.querySelectorAll("[data-dropdown].active").forEach((t=>{t!==a&&t.classList.remove("active")}))}))})();

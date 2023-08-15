@@ -1,3 +1,3 @@
-import {dropDownFunc} from './menu'
+import {drop} from './menu'
 
-dropDownFunc()
+
