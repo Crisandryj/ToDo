@@ -13,7 +13,8 @@ constructor(name){
 
 getItems(){
   return this.items
-}
+};
+
 
 
 }
