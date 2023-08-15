@@ -10,6 +10,11 @@ body {
   gap: 1rem;
 }
 
+#newproject{
+  position: absolute;
+  right: 10px;
+}
+
 .link {
   background: none;
   border: none;
@@ -65,3 +70,4 @@ body {
 .login-form > input {
   margin-bottom: .5rem;
 }
+
