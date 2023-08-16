@@ -1,10 +1,15 @@
 import {drop} from './menu'
 import {Project} from './project'
 
-const newProject = document.querySelector('#newproject')
+const projectForm = document.getElementById('projectform')
 
 
 
-// newProject.addEventListener('click',  )
+projectForm.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  const project = projectForm.elements.name
+  const newProject = new Project(project.value)
+  console.log(newProject)
+} )
 
 
