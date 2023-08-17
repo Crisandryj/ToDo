@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  text-align: center;
 }
 
 .header {
@@ -69,5 +70,11 @@ body {
 
 .login-form > input {
   margin-bottom: .5rem;
+}
+
+#projectform{
+  display: inline-block;
+  text-align: center;
+  border-style: solid;
 }
 
