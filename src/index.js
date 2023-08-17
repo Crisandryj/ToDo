@@ -9,7 +9,6 @@ projectForm.addEventListener('submit',(e)=>{
   e.preventDefault();
   const project = projectForm.elements.name
   const newProject = new Project(project.value)
-  console.log(newProject)
 } )
 
 
