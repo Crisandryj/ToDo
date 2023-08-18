@@ -72,8 +72,14 @@ body {
   margin-bottom: .5rem;
 }
 
-#projectform{
+#projectform {
   display: inline-block;
+  text-align: center;
+  border-style: solid;
+}
+
+#projectform.hide{
+  display: none;
   text-align: center;
   border-style: solid;
 }
