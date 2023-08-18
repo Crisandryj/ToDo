@@ -2,10 +2,6 @@ body {
   margin: 0;
   
 }
-.form {
-  text-align: center;
-
-}
 
 .header {
   background-color: #F3F3F3;
@@ -82,6 +78,10 @@ body {
   border-style: solid;
 }
 
+.form {
+  position: fixed;
+  right: 10px;
+}
 #projectform.hide{
   display: none;
   text-align: center;

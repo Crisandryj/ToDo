@@ -10,7 +10,7 @@ const projectInstances = [];
 function addProjectToList (project){
   const list = document.createElement('ul')
   content.appendChild(list)
-  const listItem = document.createElement('li')
+  const listItem = document.createElement('a')
   content.appendChild(listItem)
   listItem.textContent = project
 }
