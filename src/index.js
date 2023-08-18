@@ -17,10 +17,6 @@ function addProjectToList (project){
   projectName.textContent = project
 }
 
-function addListToProject (project){
-  project.classList.add(project)
-}
-
 // Create new project
 projectForm.addEventListener('submit',(e)=>{
   e.preventDefault();
