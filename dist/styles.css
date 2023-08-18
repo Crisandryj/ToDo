@@ -11,7 +11,12 @@ body {
   gap: 1rem;
 }
 
-#newproject{
+#newproject {
+  position: absolute;
+  right: 100px;
+}
+
+#newitem {
   position: absolute;
   right: 10px;
 }
@@ -79,6 +84,7 @@ body {
 }
 
 .form {
+  text-align: center;
   position: fixed;
   right: 10px;
 }

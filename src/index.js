@@ -10,9 +10,13 @@ const projectInstances = [];
 function addProjectToList (project){
   const list = document.createElement('ul')
   content.appendChild(list)
-  const listItem = document.createElement('a')
-  content.appendChild(listItem)
-  listItem.textContent = project
+  const projectName = document.createElement('button')
+  content.appendChild(projectName)
+  projectName.textContent = project
+}
+
+function addListToProject (project){
+  project.classList.add(project)
 }
 
 // Create new project
