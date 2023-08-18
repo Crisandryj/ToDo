@@ -94,7 +94,16 @@ body {
   border-style: solid;
 }
 
+#todoform.hide{
+  display: none;
+  text-align: center;
+  border-style: solid;
+}
 #projectform h1{
 font-size: 30px;
+}
+
+h1{
+  font-size: 30px;
 }
 
