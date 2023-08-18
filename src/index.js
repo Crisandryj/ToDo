@@ -5,6 +5,7 @@ const projectForm = document.getElementById('projectform')
 const projectInstances = [];
 const newProjectBtn = document.querySelector('#newproject')
 
+// Create new project
 projectForm.addEventListener('submit',(e)=>{
   e.preventDefault();
   const project = projectForm.elements.name
