@@ -13,6 +13,15 @@ function addProjectToList (project){
   const list = document.createElement('ul')
   content.appendChild(list)
   const projectName = document.createElement('button')
+  projectName.classList.add(project)
+  content.appendChild(projectName)
+  projectName.textContent = project
+}
+
+function addItemToProject (project){
+  const list = document.createElement('ul')
+  content.appendChild(list)
+  const projectName = document.createElement('button')
   content.appendChild(projectName)
   projectName.textContent = project
 }
@@ -32,7 +41,7 @@ newProjectBtn.addEventListener('click', () =>{
   projectForm.classList.toggle('hide')
 })
 
-// Create new project
+// Create new todoitem
 todoform.addEventListener('submit',(e)=>{
   e.preventDefault();
   const project = todoform.elements.name
