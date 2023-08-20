@@ -1,5 +1,6 @@
 import {drop} from './menu'
 import {Project} from './project'
+import { ToDoItem } from './todoitem'
 
 const projectForm = document.getElementById('projectform')
 const todoform = document.getElementById('todoform')
@@ -18,9 +19,9 @@ function addProjectToList (project){
   projectName.textContent = project
 }
 
-function addItemToProject (project){
+function addItemToProject (item,project){
   const proj = document.querySelector(`.${ project}`)
-  proj.appendChild(list)
+  proj.appendChild(item)
   const projectName = document.createElement('button')
   content.appendChild(projectName)
   projectName.textContent = project
@@ -44,10 +45,13 @@ newProjectBtn.addEventListener('click', () =>{
 // Create new todoitem
 todoform.addEventListener('submit',(e)=>{
   e.preventDefault();
-  const project = todoform.elements.name
-  const newProject = new Project(project.value)
-  projectInstances.push(newProject)
-  addProjectToList(newProject.name)
+  const itemProject = todoform.elements.project
+  const itemTitle = todoform.elements.title
+  const itemDescription = todoform.elements.description
+  const itemDueDate= todoform.elements.dueDate
+  const itemPriority = todoform.elements.priority
+  const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)
+  addItemToProject(todoItem,itemProject)
   todoform.reset()
 } )
 
