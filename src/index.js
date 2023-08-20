@@ -19,8 +19,8 @@ function addProjectToList (project){
 }
 
 function addItemToProject (project){
-  const list = document.createElement('ul')
-  content.appendChild(list)
+  const proj = document.querySelector(`.${ project}`)
+  proj.appendChild(list)
   const projectName = document.createElement('button')
   content.appendChild(projectName)
   projectName.textContent = project
