@@ -107,7 +107,7 @@ h1{
   font-size: 30px;
 }
 
-.projects{
+.projects > h1{
   width:fit-content;
   background-color: blueviolet;
   font-size: 20px;
