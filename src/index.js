@@ -1,36 +1,9 @@
 import {drop} from './menu'
 import {Project} from './project'
 import { ToDoItem } from './todoitem'
+import { projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList} from './listAllProjects'
 
-const projectForm = document.getElementById('projectform')
-const todoform = document.getElementById('todoform')
-const newProjectBtn = document.querySelector('#newproject')
-const newToDoBtn = document.querySelector('#newitem')
-const content = document.querySelector('.content')
 
-const projectInstances = [];
-
-function addProjectToList (project){
-  const list = document.createElement('ul')
-  content.appendChild(list)
-  const projectContainer = document.createElement('div')
-  const projectName = document.createElement('h1')
-  projectContainer.classList.add(project)
-  projectContainer.classList.add('projects')
-  content.appendChild(projectContainer)
-  projectContainer.appendChild(projectName)
-  projectName.textContent = project
-}
-
-function addItemToProject (item,project){
-  const proj = document.querySelector(`.${ project.value}`)
-  const itemP = document.createElement('p')
-  itemP.textContent = item.description
-  proj.appendChild(itemP)
-  // const projectName = document.createElement('div')
-  // content.appendChild(projectName)
-  // projectName.textContent = project
-}
 
 // Create new project
 projectForm.addEventListener('submit',(e)=>{
@@ -64,8 +37,6 @@ todoform.addEventListener('submit',(e)=>{
 newToDoBtn.addEventListener('click', () =>{
   todoform.classList.toggle('hide')
 })
-
-// List projects
 
 
 
