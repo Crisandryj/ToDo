@@ -1,7 +1,7 @@
 import {drop} from './menu'
 import {Project} from './project'
 import { ToDoItem } from './todoitem'
-import { projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList} from './listAllProjects'
+import { projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList,addProjectToSideBar} from './listAllProjects'
 
 
 
@@ -12,6 +12,7 @@ projectForm.addEventListener('submit',(e)=>{
   const newProject = new Project(project.value)
   projectInstances.push(newProject)
   addProjectToList(newProject.name)
+  addProjectToSideBar(newProject.name)
   projectForm.reset()
 } )
 
