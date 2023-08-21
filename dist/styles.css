@@ -107,3 +107,9 @@ h1{
   font-size: 30px;
 }
 
+.projects{
+  width:fit-content;
+  background-color: blueviolet;
+  font-size: 20px;
+  font-weight: bold;
+}
