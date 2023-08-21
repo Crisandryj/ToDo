@@ -35,7 +35,8 @@ function addItemToProject (item,project){
   const proj = content.querySelector(`.${ project.value}`)
   const itemP = document.createElement('p')
   itemP.textContent = item.description
-  proj.appendChild(itemP)
+  proj.appendChild(itemP)}
+
   // const projectName = document.createElement('div')
   // content.appendChild(projectName)
   // projectName.textContent = project
