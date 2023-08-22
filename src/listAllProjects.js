@@ -7,12 +7,11 @@ const sideBar = document.querySelector('.sidebar')
 
 const projectInstances = [];
 
-//Working on creating select option when project is created
+// Working on creating select option when project is created
 function createSelectOptions() {
   const option = document.createElement('option')
   const projects = document.getElementById('projects')
   projects.appendChild(option)
-  console.log('hi')
 }
 
 function addProjectToList (project){
@@ -49,7 +48,7 @@ function addItemToProject (item,project){
   // const projectName = document.createElement('div')
   // content.appendChild(projectName)
   // projectName.textContent = project
-}
+
 
 
 
