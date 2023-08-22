@@ -8,9 +8,9 @@ import { createSelectOptions, projectForm, newProjectBtn, todoform, addItemToPro
 // Create new project
 projectForm.addEventListener('submit',(e)=>{
   e.preventDefault();
-  createSelectOptions()
   const project = projectForm.elements.name
   const newProject = new Project(project.value)
+  createSelectOptions(project.value)
   projectInstances.push(newProject)
   addProjectToList(newProject.name)
   addProjectToSideBar(newProject.name)
