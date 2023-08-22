@@ -7,7 +7,16 @@ const sideBar = document.querySelector('.sidebar')
 
 const projectInstances = [];
 
+//Working on creating select option when project is created
+function createSelectOptions() {
+  const option = document.createElement('option')
+  const projects = document.getElementById('projects')
+  projects.appendChild(option)
+  console.log('hi')
+}
+
 function addProjectToList (project){
+  createSelectOptions()
   const list = document.createElement('ul')
   content.appendChild(list)
   const projectContainer = document.createElement('div')
@@ -44,4 +53,4 @@ function addItemToProject (item,project){
 
 
 
-export{projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList,addProjectToSideBar}
+export{createSelectOptions, projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList,addProjectToSideBar}

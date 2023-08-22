@@ -1,19 +1,21 @@
 import {drop} from './menu'
 import {Project} from './project'
 import { ToDoItem } from './todoitem'
-import { projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList,addProjectToSideBar} from './listAllProjects'
+import { createSelectOptions, projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList,addProjectToSideBar} from './listAllProjects'
 
 
 
 // Create new project
 projectForm.addEventListener('submit',(e)=>{
   e.preventDefault();
+  createSelectOptions()
   const project = projectForm.elements.name
   const newProject = new Project(project.value)
   projectInstances.push(newProject)
   addProjectToList(newProject.name)
   addProjectToSideBar(newProject.name)
   projectForm.reset()
+ 
 } )
 
 // Hide/Show form when button clicked
