@@ -11,8 +11,17 @@ function createProject(){
   addProjectToList(newProject.name)
   addProjectToSideBar(newProject.name)
 }
+function createTodoItem(){
+  const itemProject = todoform.elements.projects
+  const itemTitle = todoform.elements.title
+  const itemDescription = todoform.elements.description
+  const itemDueDate= todoform.elements.dueDate
+  const itemPriority = todoform.elements.priority
+  const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)
+  addItemToProject(todoItem,itemProject)
+}
 
-// Create new project
+
 projectForm.addEventListener('submit',(e)=>{
   e.preventDefault();
   createProject()
@@ -24,16 +33,10 @@ newProjectBtn.addEventListener('click', () =>{
   projectForm.classList.toggle('hide')
 })
 
-// Create new todoitem
+
 todoform.addEventListener('submit',(e)=>{
   e.preventDefault();
-  const itemProject = todoform.elements.projects
-  const itemTitle = todoform.elements.title
-  const itemDescription = todoform.elements.description
-  const itemDueDate= todoform.elements.dueDate
-  const itemPriority = todoform.elements.priority
-  const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)
-  addItemToProject(todoItem,itemProject)
+  createTodoItem()
   todoform.reset()
 } )
 

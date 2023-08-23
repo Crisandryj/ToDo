@@ -9,6 +9,15 @@ const sideBar = document.querySelector('.sidebar')
 const projectInstances = [];
 
 
+function createProject(){
+  const project = projectForm.elements.name
+  createSelectOptions(project.value)
+  const newProject = new Project(project.value)
+  projectInstances.push(newProject)
+  addProjectToList(newProject.name)
+  addProjectToSideBar(newProject.name)
+}
+
 function createSelectOptions(project) {
   const option = document.createElement('option')
   option.setAttribute("value",project)
