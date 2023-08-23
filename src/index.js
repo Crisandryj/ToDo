@@ -3,6 +3,11 @@ import {Project} from './project'
 import { ToDoItem } from './todoitem'
 import { createSelectOptions, projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList,addProjectToSideBar} from './listAllProjects'
 
+const defalutProject = new Project("default")
+projectInstances.push(defalutProject)
+addProjectToList(defalutProject.name)
+addProjectToSideBar(defalutProject.name)
+
 function createProject(){
   const project = projectForm.elements.name
   createSelectOptions(project.value)
@@ -20,7 +25,6 @@ function createTodoItem(){
   const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)
   addItemToProject(todoItem,itemProject)
 }
-
 
 projectForm.addEventListener('submit',(e)=>{
   e.preventDefault();
@@ -44,8 +48,3 @@ todoform.addEventListener('submit',(e)=>{
 newToDoBtn.addEventListener('click', () =>{
   todoform.classList.toggle('hide')
 })
-
-
-
-
-
