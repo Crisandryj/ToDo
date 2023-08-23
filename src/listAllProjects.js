@@ -1,9 +1,12 @@
+
+
 const projectForm = document.getElementById('projectform')
 const todoform = document.getElementById('todoform')
 const newProjectBtn = document.querySelector('#newproject')
 const newToDoBtn = document.querySelector('#newitem')
 const content = document.querySelector('.content')
 const sideBar = document.querySelector('.sidebar')
+
 
 const projectInstances = [];
 
