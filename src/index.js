@@ -27,8 +27,7 @@ newProjectBtn.addEventListener('click', () =>{
 // Create new todoitem
 todoform.addEventListener('submit',(e)=>{
   e.preventDefault();
-  const itemProject = todoform.elements.project
-  console.log(itemProject)
+  const itemProject = todoform.elements.projects
   const itemTitle = todoform.elements.title
   const itemDescription = todoform.elements.description
   const itemDueDate= todoform.elements.dueDate
