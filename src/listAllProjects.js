@@ -7,13 +7,13 @@ const sideBar = document.querySelector('.sidebar')
 
 const projectInstances = [];
 
-// Working on creating select option when project is created
+
 function createSelectOptions(project) {
   const option = document.createElement('option')
   option.setAttribute("value",project)
-  option.textContent = project
   const projects = document.getElementById('projects')
   projects.appendChild(option)
+  option.textContent = project
 }
 
 function addProjectToList (project){
@@ -42,6 +42,7 @@ function addProjectToSideBar (project){
 }
 
 function addItemToProject (item,project){
+  console.log(project.value)
   const proj = content.querySelector(`.${ project.value}`)
   const itemP = document.createElement('p')
   itemP.textContent = item.description

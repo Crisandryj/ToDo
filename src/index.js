@@ -9,12 +9,13 @@ import { createSelectOptions, projectForm, newProjectBtn, todoform, addItemToPro
 projectForm.addEventListener('submit',(e)=>{
   e.preventDefault();
   const project = projectForm.elements.name
-  const newProject = new Project(project.value)
   createSelectOptions(project.value)
+  const newProject = new Project(project.value)
   projectInstances.push(newProject)
   addProjectToList(newProject.name)
   addProjectToSideBar(newProject.name)
   projectForm.reset()
+  
  
 } )
 
@@ -27,6 +28,7 @@ newProjectBtn.addEventListener('click', () =>{
 todoform.addEventListener('submit',(e)=>{
   e.preventDefault();
   const itemProject = todoform.elements.project
+  console.log(itemProject)
   const itemTitle = todoform.elements.title
   const itemDescription = todoform.elements.description
   const itemDueDate= todoform.elements.dueDate
