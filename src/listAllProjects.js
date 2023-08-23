@@ -48,9 +48,6 @@ function addItemToProject (item,project){
   itemP.textContent = item.description
   proj.appendChild(itemP)}
 
-  // const projectName = document.createElement('div')
-  // content.appendChild(projectName)
-  // projectName.textContent = project
 
 
 
