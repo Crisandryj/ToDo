@@ -8,8 +8,6 @@ const sideBar = document.querySelector('.sidebar')
 
 const projectInstances = [];
 
-
-
 function createSelectOptions(project) {
   const option = document.createElement('option')
   option.setAttribute("value",project)
@@ -43,7 +41,6 @@ function addProjectToSideBar (project){
 }
 
 function addItemToProject (item,project){
-  console.log(project.value)
   const proj = content.querySelector(`.${ project.value}`)
   const itemP = document.createElement('p')
   itemP.textContent = item.description
