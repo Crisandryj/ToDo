@@ -1,10 +1,12 @@
 import {drop} from './menu'
 import {Project} from './project'
 import { ToDoItem } from './todoitem'
-import { createSelectOptions, projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList,addProjectToSideBar} from './listAllProjects'
+import { createSelectOptions, projectForm, newProjectBtn, 
+          todoform, addItemToProject, newToDoBtn,addProjectToList,
+          addProjectToSideBar} from './listAllProjects'
 
+// Default Project when page starts
 const defalutProject = new Project("default")
-projectInstances.push(defalutProject)
 addProjectToList(defalutProject.name)
 addProjectToSideBar(defalutProject.name)
 
@@ -12,7 +14,6 @@ function createProject(){
   const project = projectForm.elements.name
   createSelectOptions(project.value)
   const newProject = new Project(project.value)
-  projectInstances.push(newProject)
   addProjectToList(newProject.name)
   addProjectToSideBar(newProject.name)
 }

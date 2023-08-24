@@ -6,7 +6,6 @@ const content = document.querySelector('.content')
 const sideBar = document.querySelector('.sidebar')
 
 
-const projectInstances = [];
 
 function createSelectOptions(project) {
   const option = document.createElement('option')
@@ -43,11 +42,14 @@ function addProjectToSideBar (project){
 function addItemToProject (item,project){
   const proj = content.querySelector(`.${ project.value}`)
   const itemP = document.createElement('p')
+  const itemContainer = document.createElement('div')
+  itemContainer.appendChild(itemP)
   itemP.textContent = item.description
-  proj.appendChild(itemP)}
+  proj.appendChild(itemContainer)
+}
 
 
 
 
 
-export{createSelectOptions, projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn, projectInstances,addProjectToList,addProjectToSideBar}
+export{createSelectOptions, projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn,addProjectToList,addProjectToSideBar}
