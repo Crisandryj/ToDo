@@ -109,7 +109,6 @@ h1{
 
 .projects > h1{
   width:fit-content;
-  background-color: blueviolet;
   font-size: 20px;
   font-weight: bold;
 }
@@ -117,4 +116,9 @@ h1{
 .container{
   display: grid;
   grid-template-columns: 1fr 3fr;
+}
+
+.sidebar, .content{
+  margin: 5px;
+  border-style: solid;
 }
