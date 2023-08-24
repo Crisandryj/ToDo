@@ -45,6 +45,9 @@ function addItemToProject (item,project){
   const itemContainer = document.createElement('div')
   const deleteBtn = document.createElement('button')
   deleteBtn.textContent = 'Remove'
+  deleteBtn.addEventListener('click',()=>{
+   itemContainer.remove()
+  })
   itemContainer.appendChild(itemP)
   itemContainer.appendChild(deleteBtn)
   itemP.textContent = item.description
