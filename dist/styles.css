@@ -1,10 +1,9 @@
 body {
-  margin: 10px;
-  
+  background-color: black;
 }
 
 .header {
-  background-color: #F3F3F3;
+  background-color: #242222;
   display: flex;
   align-items: baseline;
   padding: .5rem;
@@ -25,7 +24,7 @@ body {
   background: none;
   border: none;
   text-decoration: none;
-  color: #777;
+  color: white;
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
@@ -80,18 +79,17 @@ body {
 #projectform {
   display: inline-block;
   text-align: center;
-  border-style: solid;
 }
 
 .form {
   text-align: center;
   position: fixed;
   right: 10px;
+  color: white;
 }
 #projectform.hide{
   display: none;
   text-align: center;
-  border-style: solid;
 }
 
 #todoform.hide{
@@ -100,10 +98,12 @@ body {
   border-style: solid;
 }
 #projectform h1{
+color: white;
 font-size: 30px;
 }
 
 h1{
+  color: white;
   font-size: 30px;
 }
 
@@ -111,6 +111,7 @@ h1{
   width:fit-content;
   font-size: 20px;
   font-weight: bold;
+  color: white;
 }
 
 .container{
@@ -122,3 +123,4 @@ h1{
   margin: 5px;
   border-style: solid;
 }
+
