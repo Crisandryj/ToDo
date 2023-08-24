@@ -6,7 +6,7 @@ import { createSelectOptions, projectForm, newProjectBtn,
           addProjectToSideBar} from './listAllProjects'
 
 // Default Project when page starts
-const defalutProject = new Project("default")
+const defalutProject = new Project("Default")
 addProjectToList(defalutProject.name)
 addProjectToSideBar(defalutProject.name)
 
