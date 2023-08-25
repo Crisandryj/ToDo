@@ -10,13 +10,18 @@ const defalutProject = new Project("Default")
 addProjectToList(defalutProject.name)
 addProjectToSideBar(defalutProject.name)
 
+function removeSpaces(string) {
+  return string.split(' ').join('');
+ };
+
 function createProject(){
   const project = projectForm.elements.name
   createSelectOptions(project.value)
   const newProject = new Project(project.value)
   addProjectToList(newProject.name)
   addProjectToSideBar(newProject.name)
-}
+};
+
 function createTodoItem(){
   const itemProject = todoform.elements.projects
   const itemTitle = todoform.elements.title
@@ -25,27 +30,28 @@ function createTodoItem(){
   const itemPriority = todoform.elements.priority
   const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)
   addItemToProject(todoItem,itemProject)
-}
+};
 
 projectForm.addEventListener('submit',(e)=>{
   e.preventDefault();
   createProject()
   projectForm.reset()  
-} )
+} );
+
 
 // Hide/Show form when button clicked
 newProjectBtn.addEventListener('click', () =>{
   projectForm.classList.toggle('hide')
-})
+});
 
 
 todoform.addEventListener('submit',(e)=>{
   e.preventDefault();
   createTodoItem()
   todoform.reset()
-} )
+} );
 
 // Hide/Show form when button clicked
 newToDoBtn.addEventListener('click', () =>{
   todoform.classList.toggle('hide')
-})
+});
