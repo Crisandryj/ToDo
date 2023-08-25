@@ -10,9 +10,7 @@ const defalutProject = new Project("Default")
 addProjectToList(defalutProject.name)
 addProjectToSideBar(defalutProject.name)
 
-function removeSpaces(string) {
-  return string.split(' ').join('');
- };
+
 
 function createProject(){
   const project = projectForm.elements.name
