@@ -1,3 +1,10 @@
+* {
+  font-family: 'Alegreya Sans';
+}
+
+button{
+  background-color: #242222;
+}
 body {
   background-color: black;
 }
@@ -13,11 +20,13 @@ body {
 #newproject {
   position: absolute;
   right: 100px;
+  color: white;
 }
 
 #newitem {
   position: absolute;
   right: 10px;
+  color: white;
 }
 
 .link {
@@ -98,16 +107,19 @@ body {
   border-style: solid;
 }
 #projectform h1{
+font-family: 'Alegreya Sans';
 color: white;
 font-size: 30px;
 }
 
 h1{
+  font-family: 'Alegreya Sans';
   color: white;
   font-size: 30px;
 }
 
 .projects > h1{
+  font-family: 'Alegreya Sans';
   width:fit-content;
   font-size: 20px;
   font-weight: bold;
@@ -122,5 +134,6 @@ h1{
 .sidebar, .content{
   margin: 5px;
   border-style: solid;
+  border-color: white;
 }
 
