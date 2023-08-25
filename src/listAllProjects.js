@@ -41,8 +41,9 @@ function addProjectToSideBar (project){
 
 function addItemToProject (item,project){
   const proj = content.querySelector(`.${ project.value}`)
-  const itemP = document.createElement('p')
+  const itemP = document.createElement('li')
   const itemContainer = document.createElement('div')
+  itemContainer.classList.add('item')
   const completeBtn = document.createElement('input')
   completeBtn.setAttribute('type','radio')
   completeBtn.addEventListener('click',()=>{

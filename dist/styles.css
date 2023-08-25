@@ -9,6 +9,17 @@ body {
   background-color: black;
 }
 
+
+.item{
+display: flex;
+flex-direction: row;
+}
+
+li{
+  list-style-type: none;
+  color:white;
+}
+
 .header {
   background-color: #242222;
   display: flex;
