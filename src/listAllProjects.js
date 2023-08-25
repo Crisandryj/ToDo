@@ -5,7 +5,9 @@ const newToDoBtn = document.querySelector('#newitem')
 const content = document.querySelector('.content')
 const sideBar = document.querySelector('.sidebar')
 
-
+function removeSpaces(string) {
+  return string.split(' ').join('');
+ };
 
 function createSelectOptions(project) {
   const option = document.createElement('option')
@@ -20,7 +22,7 @@ function addProjectToList (project){
   content.appendChild(list)
   const projectContainer = document.createElement('div')
   const projectName = document.createElement('h1')
-  projectContainer.classList.add(project)
+  projectContainer.classList.add(removeSpaces(project))
   projectContainer.classList.add('projects')
   content.appendChild(projectContainer)
   projectContainer.appendChild(projectName)
@@ -32,7 +34,7 @@ function addProjectToSideBar (project){
   sideBar.appendChild(list)
   const projectContainer = document.createElement('div')
   const projectName = document.createElement('h1')
-  projectContainer.classList.add(project)
+  projectContainer.classList.add(removeSpaces(project))
   projectContainer.classList.add('projects')
   sideBar.appendChild(projectContainer)
   projectContainer.appendChild(projectName)
@@ -40,7 +42,7 @@ function addProjectToSideBar (project){
 }
 
 function addItemToProject (item,project){
-  const proj = content.querySelector(`.${ project.value}`)
+  const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
   const itemP = document.createElement('li')
   const itemContainer = document.createElement('div')
   itemContainer.classList.add('item')
