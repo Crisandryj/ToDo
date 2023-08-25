@@ -43,9 +43,9 @@ function addItemToProject (item,project){
   const proj = content.querySelector(`.${ project.value}`)
   const itemP = document.createElement('p')
   const itemContainer = document.createElement('div')
-  const deleteBtn = document.createElement('button')
-  deleteBtn.textContent = 'Remove'
-  deleteBtn.addEventListener('click',()=>{
+  const completeBtn = document.createElement('button')
+  completeBtn.textContent = 'Complete'
+  completeBtn.addEventListener('click',()=>{
    itemContainer.remove()
   })
   itemContainer.appendChild(itemP)
