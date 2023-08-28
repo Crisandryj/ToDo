@@ -10,94 +10,46 @@
 </head>
 <body>
   <div class="header">
-    <div class="dropdown" data-dropdown>
-      <a href="#" class="link">Home</a>
-      <button class="link" data-dropdown-button>Projects</button>
-      <div class="dropdown-menu information-grid">
-        <div>
-          <div class="dropdown-heading">P0</div>
-          <div class="dropdown-links">
-            <a href="#" class="link">x</a>
-            <a href="#" class="link">x</a>
-            <a href="#" class="link">x</a>
-          </div>
-        </div>
-        <div>
-          <div class="dropdown-heading">P1</div>
-          <div class="dropdown-links">
-            <a href="#" class="link">x</a>
-            <a href="#" class="link">x</a>
-            <a href="#" class="link">x</a>
-          </div>
-        </div>
-        <div>ß
-          <div class="dropdown-heading">P2</div>
-          <div class="dropdown-links">
-            <a href="#" class="link">x</a>
-            <a href="#" class="link">x</a>
-            <a href="#" class="link">x</a>
-          </div>
-        </div>
-        <div>
-          <div class="dropdown-heading">P3</div>
-          <div class="dropdown-links">
-            <a href="#" class="link">x</a>
-            <a href="#" class="link">x</a>
-            <a href="#" class="link">x</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="dropdown" data-dropdown>
-      <button class="link" data-dropdown-button>Login</button>
-      <div class="dropdown-menu">
-        <form class="login-form">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password">
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    </div>
     <button id="newproject">New Project</button> 
     <button id="newitem">New ToDo</button> 
   </div>
-  <div class="form">
-  <form method="post" id="projectform" class="hide">
-    <h1>New Project</h1>
-    <label for="name">Name:
-      <input type="text" id="name" name="name">
-    </label>  <br><br>
-    <input type="submit">
-  </form>
-  <form method="post" id="todoform" class="hide">
-    <h1>ToDo Item</h1>
-    <label for="projects">Select Project: </label>
-      <select id="projects" name="projects">
-        <option value="Default">Default</option>
-      </select>
-     <br>
-    <label for="title">Title:
-      <input type="text" id="title" name="title">
-    </label>  <br>
-    <label for="description">Description:
-      <input type="text" id="description" name="description">
-    </label>  <br>
-    <label for="dueDate">Due Date:
-      <input type="date" id="dueDate" name="dueDate">
-    </label>  <br>
-    <label for="priority">Priority:
-      <input type="range" id="priority" name="priority">
-    </label>  <br>
-    <input type="submit">
-  </form>
-</div>
-<div class="container">
+ 
+  <div class="container">
   <div class="sidebar">
     <h1>Projects</h1>
   </div>
-  <div class="content"></div>
-</div>
+  <div class="content">
+    <div class="form">
+      <form method="post" id="projectform" class="hide">
+        <h1>New Project</h1>
+        <label for="name">Name:
+          <input type="text" id="name" name="name">
+        </label>  <br><br>
+        <input type="submit">
+      </form>
+      <form method="post" id="todoform" class="hide">
+        <h1>ToDo Item</h1>
+        <label for="projects">Select Project: </label>
+          <select id="projects" name="projects">
+            <option value="Default">Default</option>
+          </select>
+         <br>
+        <label for="title">Title:
+          <input type="text" id="title" name="title">
+        </label>  <br>
+        <label for="description">Description:
+          <input type="text" id="description" name="description">
+        </label>  <br>
+        <label for="dueDate">Due Date:
+          <input type="date" id="dueDate" name="dueDate">
+        </label>  <br>
+        <label for="priority">Priority:
+          <input type="range" id="priority" name="priority">
+        </label>  <br>
+        <input type="submit">
+      </form>
+      </div>
+  </div>
+  </div>
 </body>
 </html>

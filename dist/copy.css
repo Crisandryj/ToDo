@@ -1,0 +1,102 @@
+* {
+  font-family: 'Alegreya Sans';
+}
+
+button{
+  background-color: #252B48;
+}
+body {
+  background-color: #272829;
+}
+
+.item{
+display: flex;
+flex-direction: row;
+}
+
+li{
+  list-style-type: none;
+  color:white;
+}
+
+.header {
+  background-color: #61677A;
+  height: 5vh;
+}
+
+#newproject {
+  position: absolute;
+  right: 100px;
+  color: white;
+}
+
+#newitem {
+  position: absolute;
+  right: 10px;
+  color: white;
+}
+
+
+#projectform {
+  display: inline-block;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+  position: fixed;
+  right: 10px;
+  color: white;
+}
+#projectform.hide{
+  display: none;
+  text-align: center;
+}
+
+#todoform.hide{
+  display: none;
+  text-align: center;
+  border-style: solid;
+}
+
+#projectform h1{
+font-family: 'Alegreya Sans';
+color: white;
+font-size: 30px;
+}
+
+h1{
+  font-family: 'Alegreya Sans';
+  color: white;
+  font-size: 30px;
+}
+
+.projects > h1{
+  font-family: 'Alegreya Sans';
+  width:fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.sidebar, .content{
+  height:100vh;
+}
+
+.sidebar{
+  background-color: #272829;
+}
+
+
+
+.content{
+  width: 99vh;
+  display:flex;
+  justify-self: center;
+
+}

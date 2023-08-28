@@ -2,139 +2,12 @@
   font-family: 'Alegreya Sans';
 }
 
-button{
-  background-color: #242222;
-}
-body {
-  background-color: black;
-}
-
-
-.item{
-display: flex;
-flex-direction: row;
-}
-
-li{
-  list-style-type: none;
-  color:white;
-}
-
-.header {
-  background-color: #242222;
-  display: flex;
-  align-items: baseline;
-  padding: .5rem;
-  gap: 1rem;
-}
-
-#newproject {
-  position: absolute;
-  right: 100px;
-  color: white;
-}
-
-#newitem {
-  position: absolute;
-  right: 10px;
-  color: white;
-}
-
-.link {
-  background: none;
-  border: none;
-  text-decoration: none;
-  color: white;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  padding: 0;
-}
-
-.dropdown.active > .link,
-.link:hover {
-  color: black;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  position: absolute;
-  left: 0;
-  top: calc(100% + .25rem);
-  background-color: white;
-  padding: .75rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-10px);
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-}
-
-.dropdown.active > .link + .dropdown-menu {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-.information-grid {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 2rem;
-}
-
-.dropdown-links {
-  display: flex;
-  flex-direction: column;
-  gap: .25rem;
-}
-
-.login-form > input {
-  margin-bottom: .5rem;
-}
-
-#projectform {
-  display: inline-block;
-  text-align: center;
-}
-
-.form {
-  text-align: center;
-  position: fixed;
-  right: 10px;
-  color: white;
-}
 #projectform.hide{
   display: none;
-  text-align: center;
 }
 
 #todoform.hide{
   display: none;
-  text-align: center;
-  border-style: solid;
-}
-#projectform h1{
-font-family: 'Alegreya Sans';
-color: white;
-font-size: 30px;
-}
-
-h1{
-  font-family: 'Alegreya Sans';
-  color: white;
-  font-size: 30px;
-}
-
-.projects > h1{
-  font-family: 'Alegreya Sans';
-  width:fit-content;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
 }
 
 .container{
@@ -143,9 +16,6 @@ h1{
 }
 
 .sidebar, .content{
-  margin: 5px;
-  border-style: solid;
-  border-color: white;
   height:100vh;
 }
 
@@ -153,5 +23,5 @@ h1{
   width: 99vh;
   display:flex;
   justify-self: center;
-}
 
+}
