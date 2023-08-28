@@ -2,6 +2,10 @@
   font-family: 'Alegreya Sans';
 }
 
+.header{
+  display: flex;
+  justify-content: right;
+}
 #projectform.hide{
   display: none;
 }
