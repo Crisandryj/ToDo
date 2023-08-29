@@ -44,6 +44,9 @@ function addProjectToSideBar (project){
 function addItemToProject (item,project){
   const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
   const itemP = document.createElement('li')
+  const itemTitle = document.createElement('li')
+  const itemDueDate = document.createElement('li')
+  const itemPriority = document.createElement('li')
   const itemContainer = document.createElement('div')
   itemContainer.classList.add('item')
   const completeBtn = document.createElement('input')
@@ -52,8 +55,14 @@ function addItemToProject (item,project){
    itemContainer.remove()
   })
   itemContainer.appendChild(itemP)
+  itemContainer.appendChild(itemTitle)
+  itemContainer.appendChild(itemDueDate)
+  itemContainer.appendChild(itemPriority)
   itemContainer.appendChild(completeBtn)
   itemP.textContent = item.description
+  itemTitle.textContent = item.title
+  itemDueDate.textContent = item.dueDate
+  itemPriority.textContent = item.priority
   proj.appendChild(itemContainer)
 }
 

@@ -67,3 +67,8 @@ font-size: 20px;
 .defaultprojects{
   background-color: blue;
 }
+
+.item{
+  display: flex;
+  flex-direction: row;
+}
