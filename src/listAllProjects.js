@@ -43,23 +43,35 @@ function addProjectToSideBar (project){
 
 function addItemToProject (item,project){
   const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
-  const itemP = document.createElement('li')
-  const itemTitle = document.createElement('li')
-  const itemDueDate = document.createElement('li')
-  const itemPriority = document.createElement('li')
-  const itemContainer = document.createElement('div')
+  const itemContainer = document.createElement('table')
+  // Headers
+  const itemDescriptionHead = document.createElement('th')
+  const itemTitleHead = document.createElement('th')
+  const itemDueDateHead = document.createElement('th')
+  const itemPriorityHead = document.createElement('th')
+  // Rows
+  const headerRow = document.createElement('tr')
+  const dataRow = document.createElement('tr')
+  // Data
+  const itemDescription = document.createElement('td')
+  const itemTitle = document.createElement('td')
+  const itemDueDate = document.createElement('td')
+  const itemPriority = document.createElement('td')
   itemContainer.classList.add('item')
   const completeBtn = document.createElement('input')
   completeBtn.setAttribute('type','radio')
   completeBtn.addEventListener('click',()=>{
    itemContainer.remove()
   })
-  itemContainer.appendChild(itemP)
-  itemContainer.appendChild(itemTitle)
-  itemContainer.appendChild(itemDueDate)
-  itemContainer.appendChild(itemPriority)
-  itemContainer.appendChild(completeBtn)
-  itemP.textContent = item.description
+  itemDescriptionHead.textContent = "Description"
+  headerRow.appendChild(itemDescriptionHead)
+  dataRow.appendChild(itemDescription)
+  dataRow.appendChild(itemTitle)
+  dataRow.appendChild(itemDueDate)
+  dataRow.appendChild(itemPriority)
+  dataRow.appendChild(completeBtn)
+  itemContainer.appendChild(dataRow)
+  itemDescription.textContent = item.description
   itemTitle.textContent = item.title
   itemDueDate.textContent = item.dueDate
   itemPriority.textContent = item.priority
