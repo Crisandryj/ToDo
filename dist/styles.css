@@ -38,7 +38,7 @@ input[type=submit]{
 	padding: 20px;
 	text-align: center;
 	position: relative;
-	top: -1000px;
+	top: -3000px;
 }
 
 #projectform, #todoform{
