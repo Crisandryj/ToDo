@@ -28,24 +28,30 @@ input[type=submit]{
   color: black;
 }
 
-#projectform.hide{
-  display: none;
-}
-
-#todoform.hide{
-  display: none;
+#projectform.hide, #todoform.hide{
+  color: black;
+	background-color: #fff;
+	width: 30%;
+	margin: auto;
+	border: 3px solid #2ecc71;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	top: -1000px;
 }
 
 #projectform, #todoform{
-  background-color:rgb(41, 41, 41) ;
-  border: #02040a;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  float: left;
-  border-radius: 10px;
+  color: black;
+	background-color: #fff;
+	width: 30%;
+	margin: auto;
+	border: 3px solid #2ecc71;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+  
 }
 
 .container{
