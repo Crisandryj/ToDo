@@ -30,10 +30,10 @@ input[type=submit]{
 
 #projectform.hide, #todoform.hide{
   color: black;
-	background-color: #fff;
+	background-color: rgb(7, 31, 46);
 	width: 30%;
 	margin: auto;
-	border: 3px solid #2ecc71;
+	border: 3px solid #0b0c0b;
 	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
@@ -43,10 +43,10 @@ input[type=submit]{
 
 #projectform, #todoform{
   color: black;
-	background-color: #fff;
+	background-color: rgb(7, 31, 46);
 	width: 30%;
 	margin: auto;
-	border: 3px solid #2ecc71;
+	border: 3px solid #0b0c0b;
 	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
