@@ -18,8 +18,6 @@ function createSelectOptions(project) {
 }
 
 function addProjectToList (project){
-  const list = document.createElement('ul')
-  content.appendChild(list)
   const projectContainer = document.createElement('div')
   const projectName = document.createElement('h2')
   projectContainer.classList.add(removeSpaces(project))
@@ -30,8 +28,6 @@ function addProjectToList (project){
 }
 
 function addProjectToSideBar (project){
-  const list = document.createElement('ul')
-  sideBar.appendChild(list)
   const projectContainer = document.createElement('div')
   const projectName = document.createElement('h2')
   projectContainer.classList.add(removeSpaces(project))

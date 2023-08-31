@@ -4,6 +4,9 @@ import { createSelectOptions, projectForm, newProjectBtn,
           todoform, addItemToProject, newToDoBtn,addProjectToList,
           addProjectToSideBar} from './listAllProjects'
 
+
+const content = document.querySelector('.content')
+
 // Default Project when page starts
 const defalutProject = new Project("Default")
 addProjectToList(defalutProject.name)
@@ -52,3 +55,4 @@ todoform.addEventListener('submit',(e)=>{
 newToDoBtn.addEventListener('click', () =>{
   todoform.classList.toggle('hide')
 });
+
