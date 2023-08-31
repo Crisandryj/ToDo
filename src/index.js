@@ -1,4 +1,3 @@
-import {drop} from './menu'
 import {Project} from './project'
 import { ToDoItem } from './todoitem'
 import { createSelectOptions, projectForm, newProjectBtn, 
