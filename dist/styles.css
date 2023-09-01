@@ -11,6 +11,9 @@ header{
   background-color: rgb(78, 14, 83);
   height: 200px;
   border-radius: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 h1{
@@ -41,6 +44,9 @@ h1{
 	padding: 20px;
 	text-align: center;
   position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
  #todoform{
@@ -53,12 +59,18 @@ h1{
 	padding: 20px;
 	text-align: center;
   position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 li {
   list-style-type: none;
 }
-
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
 
 
 
