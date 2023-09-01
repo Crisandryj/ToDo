@@ -1,20 +1,8 @@
 * {
   font-family: 'Alegreya Sans';
-  color: white;
 }
 body{
   margin:0px;
-}
-
-.header{
-  display: flex;
-  justify-content: right;
-  background-color: #02040a;
-  border-style:solid;
-  border-bottom-color: rgb(41, 41, 41);
-  border-left: none;
-  width: 100%;
-  height: 15vh;
 }
 
 li {
@@ -38,8 +26,7 @@ input[type=submit]{
 	padding: 20px;
 	text-align: center;
 	position: relative;
-  position:fixed;
-	top: -300px;
+	top: -900px;
 }
 
 #projectform{
@@ -66,27 +53,8 @@ input[type=submit]{
   position:fixed;
 }
 
-.container{
-  display: flex;
-  grid-template-columns: 1fr 3fr;
-}
 
-.sidebar, .content{
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  background-color:#0c1117;
-  height: 100vh;
 
-}
-.sidebar{
-  border-style:solid;
-  border-color: rgb(41, 41, 41);
-}
-
-.content{
-  width: 100%;
-}
 
 
 
