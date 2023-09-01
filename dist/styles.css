@@ -1,12 +1,15 @@
 * {
   font-family: 'Alegreya Sans';
 }
+
+html, body { margin: 0; }
+
 header{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(78, 14, 83);
-  height: 100px;
+  height: 200px;
   border-radius: 10px;
 }
 
