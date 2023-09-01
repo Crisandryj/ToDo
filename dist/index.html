@@ -10,14 +10,22 @@
 </head>
 <body>
   <header>
-    <div class="buttons">
-      <button id="newproject">New Project</button> 
-      <button id="newitem">New ToDo</button> 
-    </div>
-  </div>
-  <section class="forms">
+    <h1>Productivity App</h1>
+  </header>
+
+<div class="container">
+  <section class="sidebar">
+  <div class="sidebar">
+    <h2>Projects</h2>
+  </section>
+  <section class="content"> 
+    <button id="newproject">New Project</button> 
+    <button id="newitem">New ToDo</button> 
+  </section>
+</div>
+<section class="forms">
   <form method="post" id="projectform" class="hide">
-    <h1>New Project</h1>
+    <h2>New Project</h2>
     <label for="name">Name:
     <input type="text" id="name" name="name">
     </label>  <br><br>
@@ -25,7 +33,7 @@
     </form>
 
     <form method="post" id="todoform" class="hide">
-    <h1>ToDo Item</h1>
+    <h2>ToDo Item</h2>
     <label for="projects">Select Project: </label>
     <select id="projects" name="projects">
     <option value="Default">Default</option>
@@ -46,13 +54,5 @@
     <input type="submit">
     </form>
   </section>
-
-<div class="container">
-  <section class="sidebar">
-  <div class="sidebar">
-    <h1>Projects</h1>
-  </section>
-  <section class="content"> </section>
-</div>
 </body>
 </html>

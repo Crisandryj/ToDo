@@ -1,19 +1,18 @@
 * {
   font-family: 'Alegreya Sans';
 }
-body{
-  margin:0px;
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(78, 14, 83);
+  height: 100px;
+  border-radius: 10px;
 }
 
-li {
-  list-style-type: none;
-}
-
-button {
-  color: black
-}
-input[type=submit]{
-  color: black;
+h1{
+  font-size: 70px;
+  color:rgb(227, 219, 219);
 }
 
 #projectform.hide, #todoform.hide{
@@ -52,6 +51,11 @@ input[type=submit]{
 	text-align: center;
   position:fixed;
 }
+
+li {
+  list-style-type: none;
+}
+
 
 
 
