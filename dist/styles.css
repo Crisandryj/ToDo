@@ -47,9 +47,7 @@ h1{
 	padding: 20px;
 	text-align: center;
   position:fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+
 }
 
  #todoform{
@@ -62,9 +60,7 @@ h1{
 	padding: 20px;
 	text-align: center;
   position:fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+
 }
 
 li {
@@ -73,6 +69,12 @@ li {
 .container{
   display: grid;
   grid-template-columns: 1fr 3fr;
+
+}
+
+.sidebar{
+  background-color: blue;
+  height: 100vh;
 }
 
 
