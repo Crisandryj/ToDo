@@ -10,7 +10,7 @@ const content = document.querySelector('.content')
 // Default Project when page starts
 const defalutProject = new Project("Default")
 addProjectToList(defalutProject.name)
-addProjectToSideBar(defalutProject.name)
+
 
 
 
