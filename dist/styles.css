@@ -81,6 +81,13 @@ li {
   border-radius: 10px;
 }
 
+.sidebar > ul >li{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .content{
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
