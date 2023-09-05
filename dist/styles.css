@@ -13,7 +13,7 @@ header{
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgb(11, 0, 0), rgb(255, 255, 245));
-  height: 200px;
+  height: 70px;
   top: 0;
   left: 0;
   right: 0;
@@ -21,7 +21,7 @@ header{
 
 h1{
   font-size: 70px;
-  color:rgb(227, 219, 219);
+  color:rgb(18, 1, 1);
 }
 
 #projectform.hide, #todoform.hide{
