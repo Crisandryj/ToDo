@@ -10,7 +10,7 @@ body{
 
 header{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   background-image: linear-gradient(rgb(11, 0, 0), rgb(255, 255, 245));
   height: 70px;
