@@ -77,3 +77,8 @@ li {
 img{
   height: 30px;
 }
+
+header{
+  display:flex;
+  justify-content: right;
+}
