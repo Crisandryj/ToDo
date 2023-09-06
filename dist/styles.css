@@ -79,6 +79,7 @@ img{
 }
 
 header{
+  position: sticky;
   display:flex;
   justify-content: right;
 }
