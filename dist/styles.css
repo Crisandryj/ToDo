@@ -24,43 +24,22 @@ h1{
   color:rgb(18, 1, 1);
 }
 
+#projectform, #todoform{
+  color: black;
+	background-color: rgb(141, 159, 170);
+	width: 50%;
+	border: 3px solid #0b0c0b;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	position: fixed;
+	top: 200px;
+  left:350px;
+}
+
 #projectform.hide, #todoform.hide{
-  color: black;
-	background-color: rgb(7, 31, 46);
-	width: 30%;
-	margin: auto;
-	border: 3px solid #0b0c0b;
-	border-radius: 10px;
-	padding: 20px;
-	text-align: center;
-	position: relative;
-	top: -900px;
-}
-
-#projectform{
-  color: black;
-	background-color: rgb(7, 31, 46);
-	width: 30%;
-	margin: auto;
-	border: 3px solid #0b0c0b;
-	border-radius: 10px;
-	padding: 20px;
-	text-align: center;
-  position:fixed;
-
-}
-
- #todoform{
-  color: black;
-	background-color: rgb(7, 31, 46);
-	width: 30%;
-	margin: auto;
-	border: 3px solid #0b0c0b;
-	border-radius: 10px;
-	padding: 20px;
-	text-align: center;
-  position:fixed;
-
+  position: fixed;
+	top: -300px;
 }
 
 li {
