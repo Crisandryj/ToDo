@@ -35,10 +35,12 @@ h1{
 	position: fixed;
 	top: 200px;
   left:350px;
+  transition: top 1s;
 }
 
 #projectform.hide, #todoform.hide{
   position: fixed;
+
 	top: -300px;
 }
 
