@@ -50,7 +50,6 @@ li {
 .container{
   display: grid;
   grid-template-columns: .5fr 3fr;
-
 }
 
 .siderbar, .content{
@@ -72,6 +71,7 @@ li {
 .content{
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
+  margin-left: 50px;
 }
 
 img{

@@ -5,13 +5,10 @@ import { createSelectOptions, projectForm, newProjectBtn,
           addProjectToSideBar} from './listAllProjects'
 
 
-const content = document.querySelector('.content')
 
 // Default Project when page starts
 const defalutProject = new Project("Default")
 addProjectToList(defalutProject.name)
-
-
 
 
 function createProject(){

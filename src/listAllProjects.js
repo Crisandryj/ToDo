@@ -60,11 +60,11 @@ function addItemToProject (item,project){
   })
   itemDescriptionHead.textContent = "Description"
   headerRow.appendChild(itemDescriptionHead)
+  dataRow.appendChild(completeBtn)
   dataRow.appendChild(itemDescription)
   dataRow.appendChild(itemTitle)
   dataRow.appendChild(itemDueDate)
   dataRow.appendChild(itemPriority)
-  dataRow.appendChild(completeBtn)
   itemContainer.appendChild(dataRow)
   itemDescription.textContent = item.description
   itemTitle.textContent = item.title
