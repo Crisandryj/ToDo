@@ -7,7 +7,7 @@ import { createSelectOptions, projectForm, newProjectBtn,
 
 
 // Default Project when page starts
-const defalutProject = new Project("Default")
+const defalutProject = new Project("Inbox")
 addProjectToList(defalutProject.name)
 
 
