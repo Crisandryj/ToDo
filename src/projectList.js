@@ -17,28 +17,16 @@ function createSelectOptions(project) {
   option.textContent = project
 }
 
-function removeProject(project){
-  const container = document.querySelector('.container')
-  container.removeChild(project)
-  }
 
 function addProjectToList (project){
   const projectContainer = document.createElement('div')
   const projectName = document.createElement('h2')
-  const button = document.createElement('button')
   projectContainer.classList.add(removeSpaces(project))
   projectContainer.classList.add('projects')
   content.appendChild(projectContainer)
   projectContainer.appendChild(projectName)
-  projectContainer.appendChild(button)
-  button.textContent = "Remove"
-  button.classList.add()
-  button.setAttribute('value',`${removeSpaces(project)} projects`)
-  button.setAttribute('name',"project")
   projectName.textContent = project
 }
-
-
 
 function addProjectToSideBar (project){
   const projectContainer = document.getElementById('myDropdown')
