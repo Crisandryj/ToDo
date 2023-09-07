@@ -2,9 +2,14 @@ import {Project} from './project'
 import { ToDoItem } from './todoitem'
 import { createSelectOptions, projectForm, newProjectBtn, 
           todoform, addItemToProject, newToDoBtn,addProjectToList,
-          addProjectToSideBar} from './listAllProjects'
+          addProjectToSideBar, removeProject} from './listAllProjects'
 
 
+const content = document.querySelector(".content")
+
+content.addEventListener('click',(e)=>{
+  console.log(e.value)
+})
 
 // Default Project when page starts
 const defalutProject = new Project("Inbox")
@@ -34,6 +39,7 @@ projectForm.addEventListener('submit',(e)=>{
   createProject()
   projectForm.reset()  
 } );
+
 
 
 // Hide/Show form when button clicked

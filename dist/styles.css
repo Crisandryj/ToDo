@@ -72,6 +72,7 @@ li {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   margin-left: 150px;
+  
 }
 
 img{
@@ -79,7 +80,7 @@ img{
 }
 
 header{
-  position: sticky;
+  position:sticky;
   display:flex;
   justify-content: right;
 }
