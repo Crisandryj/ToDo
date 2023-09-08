@@ -52,7 +52,7 @@ li {
   grid-template-columns: .8fr 3fr;
 }
 
-.siderbar, .content{
+.siderbar, #content{
   height: 100vh;
 }
 
@@ -68,7 +68,7 @@ li {
   justify-content: left;
 }
 
-.content{
+#content{
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   margin-left: 150px;

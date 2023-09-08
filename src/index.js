@@ -4,6 +4,13 @@ import { createSelectOptions, projectForm, newProjectBtn,
           todoform, addItemToProject, newToDoBtn,addProjectToList,
           addProjectToSideBar} from './projectList'
 
+
+const content = document.getElementById('content')
+
+const projects = content.getElementsByClassName('projects')
+
+console.log(projects)
+
 // Default Project when page starts
 const defalutProject = new Project("Inbox")
 addProjectToList(defalutProject.name)

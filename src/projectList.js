@@ -2,7 +2,7 @@ const projectForm = document.getElementById('projectform')
 const todoform = document.getElementById('todoform')
 const newProjectBtn = document.querySelector('#newproject')
 const newToDoBtn = document.querySelector('#newitem')
-const content = document.querySelector('.content')
+const content = document.getElementById('content')
 
 
 function removeSpaces(string) {
