@@ -21,10 +21,14 @@ function createSelectOptions(project) {
 function addProjectToList (project){
   const projectContainer = document.createElement('div')
   const projectName = document.createElement('h2')
+  const button = document.createElement('button')
+  button.setAttribute('id',project)
+  button.textContent = "Remove"
   projectContainer.classList.add(removeSpaces(project))
-  projectContainer.classList.add('projects')
+  projectContainer.classList.add('items')
   content.appendChild(projectContainer)
   projectContainer.appendChild(projectName)
+  projectContainer.appendChild(button)
   projectName.textContent = project
 }
 
@@ -32,7 +36,7 @@ function addProjectToSideBar (project){
   const projectContainer = document.getElementById('myDropdown')
   const projectName = document.createElement('a')
   projectContainer.classList.add(removeSpaces(project))
-  projectContainer.classList.add('projects')
+  projectContainer.classList.add('items')
   projectContainer.appendChild(projectName)
   projectName.textContent = project
 }

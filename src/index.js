@@ -7,10 +7,6 @@ import { createSelectOptions, projectForm, newProjectBtn,
 
 const content = document.getElementById('content')
 
-const projects = content.getElementsByClassName('projects')
-
-console.log(projects)
-
 // Default Project when page starts
 const defalutProject = new Project("Inbox")
 addProjectToList(defalutProject.name)
@@ -83,3 +79,10 @@ window.onclick = function(event) {
     }
   }
 }
+
+const button = document.getElementById('Inbox')
+
+
+button.addEventListener('click',()=>{
+  content.removeChild(button.closest('div'))
+})
