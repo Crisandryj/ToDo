@@ -80,7 +80,12 @@ window.onclick = function(event) {
   }
 }
 
-const button = document.getElementById('Inbox')
+
+
+content.addEventListener('click',(e)=>
+e.target.getAttribute('id'))
+
+const button = document.getElementById()
 
 
 button.addEventListener('click',()=>{
