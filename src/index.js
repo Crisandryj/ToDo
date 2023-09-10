@@ -85,8 +85,6 @@ window.onclick = function(event) {
 
 const button = document.getElementById(hello)
 
-
-
 button.addEventListener('click',()=>{
   content.removeChild(button.closest('div'))
 })
