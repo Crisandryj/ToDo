@@ -80,12 +80,11 @@ window.onclick = function(event) {
   }
 }
 
+ content.addEventListener('click',(e)=>
+ e.target.getAttribute('id'))
 
+const button = document.getElementById(hello)
 
-content.addEventListener('click',(e)=>
-e.target.getAttribute('id'))
-
-const button = document.getElementById()
 
 
 button.addEventListener('click',()=>{
