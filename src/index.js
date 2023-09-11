@@ -80,11 +80,22 @@ window.onclick = function(event) {
   }
 }
 
- content.addEventListener('click',(e)=>
- e.target.getAttribute('id'))
 
-const button = document.getElementById(hello)
+// Remove Project from content 
 
-button.addEventListener('click',()=>{
-  content.removeChild(button.closest('div'))
+ content.addEventListener('click', e =>
+ {
+  if (e.target.matches("button")){
+    e.target.parentNode.parentNode.removeChild(e.target.closest('div'))
+  }
 })
+
+
+
+
+
+// const button = document.getElementById()
+
+// button.addEventListener('click',()=>{
+//   content.removeChild(button.closest('div'))
+// })
