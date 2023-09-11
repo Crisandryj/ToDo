@@ -80,7 +80,6 @@ window.onclick = function(event) {
   }
 }
 
-
 // Remove Project from content 
 
  content.addEventListener('click', e =>
@@ -89,13 +88,3 @@ window.onclick = function(event) {
     e.target.parentNode.parentNode.removeChild(e.target.closest('div'))
   }
 })
-
-
-
-
-
-// const button = document.getElementById()
-
-// button.addEventListener('click',()=>{
-//   content.removeChild(button.closest('div'))
-// })
