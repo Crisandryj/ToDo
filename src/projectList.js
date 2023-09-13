@@ -42,18 +42,16 @@ function addProjectToSideBar (project){
 }
 
 
-// this.title = title;
-// this.description = description;
-// this.dueDate = dueDate;
-// this.priority = priority;
-// this.complete = complete
 
 
 function createItemListTable (item,project){
-  const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
-  const itemContainer = document.createElement('table')
-  
+
+
+  if(typeof headerRow === 'undefined'){
+    const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
+    const itemContainer = document.createElement('table')
   // Row for headers
+  
   const headerRow = document.createElement('tr')
 
   // Headers
@@ -69,6 +67,10 @@ function createItemListTable (item,project){
   // Append with headers row to table
   itemContainer.appendChild(headerRow)
   proj.appendChild(itemContainer)
+}
+else{
+  console.log('done')
+}
 }
 
 
