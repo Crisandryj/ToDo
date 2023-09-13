@@ -41,45 +41,50 @@ function addProjectToSideBar (project){
   projectName.textContent = project
 }
 
-function addItemToProject (item,project){
+
+// this.title = title;
+// this.description = description;
+// this.dueDate = dueDate;
+// this.priority = priority;
+// this.complete = complete
+
+
+function createItemListTable (item,project){
   const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
   const itemContainer = document.createElement('table')
+  
+  // Row for headers
+  const headerRow = document.createElement('tr')
+
   // Headers
   const itemDescriptionHead = document.createElement('th')
-  const itemTitleHead = document.createElement('th')
-  const itemDueDateHead = document.createElement('th')
-  const itemPriorityHead = document.createElement('th')
-  // Rows
-  const headerRow = document.createElement('tr')
-  const dataRow = document.createElement('tr')
-  // Data
-  const itemDescription = document.createElement('td')
-  const itemTitle = document.createElement('td')
-  const itemDueDate = document.createElement('td')
-  const itemPriority = document.createElement('td')
-  itemContainer.classList.add('item')
-  const completeBtn = document.createElement('input')
-  completeBtn.setAttribute('type','radio')
-  completeBtn.addEventListener('click',()=>{
-   itemContainer.remove()
-  })
-  itemDescriptionHead.textContent = "Description"
-  headerRow.appendChild(itemDescriptionHead)
-  dataRow.appendChild(completeBtn)
-  dataRow.appendChild(itemDescription)
-  dataRow.appendChild(itemTitle)
-  dataRow.appendChild(itemDueDate)
-  dataRow.appendChild(itemPriority)
-  itemContainer.appendChild(dataRow)
-  itemDescription.textContent = item.description
-  itemTitle.textContent = item.title
-  itemDueDate.textContent = item.dueDate
-  itemPriority.textContent = item.priority
+  const dueDateHead = document.createElement('th')
+  const priorityHead = document.createElement('th')
+
+  // Append headers to row
+  headerRow.appendChild(itemDescriptionHead).textContent = "Description"
+  headerRow.appendChild(dueDateHead).textContent = "Due Date"
+  headerRow.appendChild(priorityHead).textContent = "Priority"
+
+  // Append with headers row to table
+  itemContainer.appendChild(headerRow)
   proj.appendChild(itemContainer)
 }
 
 
 
+  // const completeBtn = document.createElement('input')
+
+  // completeBtn.setAttribute('type','radio')
+
+  // completeBtn.addEventListener('click',()=>{
+  //  itemContainer.remove()
+  // })
+
+  // completeHead.appendChild(completeBtn)
 
 
-export{createSelectOptions, projectForm, newProjectBtn, todoform, addItemToProject, newToDoBtn,addProjectToList,addProjectToSideBar}
+
+
+
+export{createItemListTable,createSelectOptions, projectForm, newProjectBtn, todoform, newToDoBtn,addProjectToList,addProjectToSideBar}

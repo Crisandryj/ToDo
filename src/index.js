@@ -1,8 +1,8 @@
 import {Project} from './project'
 import { ToDoItem } from './todoitem'
 import { createSelectOptions, projectForm, newProjectBtn, 
-          todoform, addItemToProject, newToDoBtn,addProjectToList,
-          addProjectToSideBar} from './projectList'
+          todoform, newToDoBtn, addProjectToList,
+          addProjectToSideBar,createItemListTable} from './projectList'
 
 
 const content = document.getElementById('content')
@@ -27,7 +27,7 @@ function createTodoItem(){
   const itemDueDate= todoform.elements.dueDate
   const itemPriority = todoform.elements.priority
   const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)
-  addItemToProject(todoItem,itemProject)
+  createItemListTable(todoItem,itemProject);
 };
 
 projectForm.addEventListener('submit',(e)=>{
