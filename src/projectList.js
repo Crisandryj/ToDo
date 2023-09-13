@@ -43,13 +43,11 @@ function addProjectToSideBar (project){
 
 
 
-
-function createItemListTable (item,project){
-
-
-  if(typeof headerRow === 'undefined'){
+function createItemListTable (project){
+  // Select project and container for each item
     const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
     const itemContainer = document.createElement('table')
+    itemContainer.classList.add(`${ removeSpaces(project.value)}`)
   // Row for headers
   
   const headerRow = document.createElement('tr')
@@ -68,10 +66,13 @@ function createItemListTable (item,project){
   itemContainer.appendChild(headerRow)
   proj.appendChild(itemContainer)
 }
-else{
-  console.log('done')
-}
-}
+
+function addItemToTable(item,project){
+  const projTable = content.querySelector(`.${ removeSpaces(project.value)}`)
+
+};
+
+
 
 
 

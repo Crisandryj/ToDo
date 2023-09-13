@@ -17,7 +17,10 @@ function createProject(){
   createSelectOptions(project.value)
   const newProject = new Project(project.value)
   addProjectToList(newProject.name)
+  // Create table to add todo items into
+  createItemListTable(project);
   addProjectToSideBar(newProject.name)
+ 
 };
 
 function createTodoItem(){
@@ -27,7 +30,7 @@ function createTodoItem(){
   const itemDueDate= todoform.elements.dueDate
   const itemPriority = todoform.elements.priority
   const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)
-  createItemListTable(todoItem,itemProject);
+  
 };
 
 projectForm.addEventListener('submit',(e)=>{
