@@ -7,9 +7,12 @@ import { createSelectOptions, projectForm, newProjectBtn,
 
 const content = document.getElementById('content')
 
+
 // Default Project when page starts
-const defalutProject = new Project("Inbox")
-addProjectToList(defalutProject.name)
+  const defalutProject = new Project("Inbox")
+  addProjectToList(defalutProject.name)
+  createItemListTable(defalutProject.name);
+  
 
 
 function createProject(){
@@ -18,7 +21,7 @@ function createProject(){
   const newProject = new Project(project.value)
   addProjectToList(newProject.name)
   addProjectToSideBar(newProject.name)
-  createItemListTable(project);
+  createItemListTable(project.value);
 };
 
 function createTodoItem(){
@@ -28,6 +31,16 @@ function createTodoItem(){
   const itemDueDate= todoform.elements.dueDate
   const itemPriority = todoform.elements.priority
   const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)  
+  const projTable = document.querySelector(`.${itemProject.value}.items table`)
+  // table row
+  const descriptionRow = document.createElement('tr')
+  // table data
+  const descriptionData = document.createElement('td');
+    descriptionData.textContent = todoItem.description
+  // Add data to row
+  descriptionRow.appendChild(descriptionData)
+  // Add to table
+  projTable.appendChild(descriptionRow)
 };
 
 projectForm.addEventListener('submit',(e)=>{

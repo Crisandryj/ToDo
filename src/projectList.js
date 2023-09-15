@@ -6,7 +6,7 @@ const content = document.getElementById('content')
 
 
 function removeSpaces(string) {
-  return string.split(' ').join('');
+  return string.split(" ").join('');
  };
 
 function createSelectOptions(project) {
@@ -18,7 +18,7 @@ function createSelectOptions(project) {
 }
 
 function createItemListTable (project){
-  const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
+  const proj = content.querySelector(`.${ removeSpaces(project)}`)
   const itemContainer = document.createElement('table')
 // Row for headers
   const headerRow = document.createElement('tr')
