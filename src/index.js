@@ -18,8 +18,7 @@ function createProject(){
   const newProject = new Project(project.value)
   addProjectToList(newProject.name)
   addProjectToSideBar(newProject.name)
-  createItemListTable(newProject);
- 
+  createItemListTable(project);
 };
 
 function createTodoItem(){
