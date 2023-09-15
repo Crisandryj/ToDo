@@ -18,4 +18,4 @@ class ToDoItem{
 
 }
 
-export {ToDoItem} 
+export default ToDoItem
