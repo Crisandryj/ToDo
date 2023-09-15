@@ -33,11 +33,6 @@ function createItemListTable (project){
 // Append with headers row to table
   itemContainer.appendChild(headerRow)
   proj.appendChild(itemContainer)
-// Remove button
-  const button = document.createElement('button')
-  button.setAttribute('id',project)
-  button.textContent = "Remove"
-  proj.appendChild(button)
 }
 
 
@@ -49,6 +44,11 @@ function addProjectToList (project){
   content.appendChild(projectContainer)
   projectContainer.appendChild(projectName)
   projectName.textContent = project
+  // Remove button
+  const button = document.createElement('button')
+  button.setAttribute('id',project)
+  button.textContent = "Remove Project"
+  projectContainer.appendChild(button)
 }
 
 function addProjectToSideBar (project){
