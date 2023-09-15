@@ -44,10 +44,8 @@ function addProjectToSideBar (project){
 
 
 function createItemListTable (project){
-  // Select project and container for each item
     const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
     const itemContainer = document.createElement('table')
-    itemContainer.classList.add(`${ removeSpaces(project.value)}`)
   // Row for headers
   
   const headerRow = document.createElement('tr')
@@ -66,12 +64,6 @@ function createItemListTable (project){
   itemContainer.appendChild(headerRow)
   proj.appendChild(itemContainer)
 }
-
-function addItemToTable(item,project){
-  const projTable = content.querySelector(`.${ removeSpaces(project.value)}`)
-
-};
-
 
 
 
