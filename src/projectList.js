@@ -21,27 +21,23 @@ function createItemListTable (project){
   const proj = content.querySelector(`.${ removeSpaces(project.value)}`)
   const itemContainer = document.createElement('table')
 // Row for headers
-
-const headerRow = document.createElement('tr')
-
+  const headerRow = document.createElement('tr')
 // Headers
-const itemDescriptionHead = document.createElement('th')
-const dueDateHead = document.createElement('th')
-const priorityHead = document.createElement('th')
-
+  const itemDescriptionHead = document.createElement('th')
+  const dueDateHead = document.createElement('th')
+  const priorityHead = document.createElement('th')
 // Append headers to row
-headerRow.appendChild(itemDescriptionHead).textContent = "Description"
-headerRow.appendChild(dueDateHead).textContent = "Due Date"
-headerRow.appendChild(priorityHead).textContent = "Priority"
-
+  headerRow.appendChild(itemDescriptionHead).textContent = "Description"
+  headerRow.appendChild(dueDateHead).textContent = "Due Date"
+  headerRow.appendChild(priorityHead).textContent = "Priority"
 // Append with headers row to table
-itemContainer.appendChild(headerRow)
-proj.appendChild(itemContainer)
+  itemContainer.appendChild(headerRow)
+  proj.appendChild(itemContainer)
 // Remove button
-const button = document.createElement('button')
-button.setAttribute('id',project)
-button.textContent = "Remove"
-proj.appendChild(button)
+  const button = document.createElement('button')
+  button.setAttribute('id',project)
+  button.textContent = "Remove"
+  proj.appendChild(button)
 }
 
 
