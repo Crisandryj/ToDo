@@ -30,14 +30,14 @@ function createTodoItem(){
   const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)  
   const projTable = document.querySelector(`.${itemProject.value}.items table`)
   // table row
-  const descriptionRow = document.createElement('tr')
+  const itemRow = document.createElement('tr')
   // table data
   const descriptionData = document.createElement('td');
     descriptionData.textContent = todoItem.description
   // Add data to row
-  descriptionRow.appendChild(descriptionData)
+  itemRow.appendChild(descriptionData)
   // Add to table
-  projTable.appendChild(descriptionRow)
+  projTable.appendChild(itemRow)
 };
 
 projectForm.addEventListener('submit',(e)=>{
