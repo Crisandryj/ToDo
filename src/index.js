@@ -7,14 +7,11 @@ import { createSelectOptions, projectForm, newProjectBtn,
 
 const content = document.getElementById('content')
 
-
 // Default Project when page starts
   const defalutProject = new Project("Inbox")
   addProjectToList(defalutProject.name)
   createItemListTable(defalutProject.name);
   
-
-
 function createProject(){
   const project = projectForm.elements.name
   createSelectOptions(project.value)
