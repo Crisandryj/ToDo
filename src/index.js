@@ -33,9 +33,15 @@ function createTodoItem(){
   const itemRow = document.createElement('tr')
   // table data
   const descriptionData = document.createElement('td');
-    descriptionData.textContent = todoItem.description
+  descriptionData.textContent = todoItem.description
+  const dueDateData =  document.createElement('td');
+  dueDateData.textContent = todoItem.dueDate
+  const priorityData =  document.createElement('td');
+  priorityData.textContent = todoItem.priority
   // Add data to row
   itemRow.appendChild(descriptionData)
+  itemRow.appendChild(dueDateData)
+  itemRow.appendChild(priorityData)
   // Add to table
   projTable.appendChild(itemRow)
 };
