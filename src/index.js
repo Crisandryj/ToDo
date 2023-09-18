@@ -25,7 +25,7 @@ function createTodoItem(){
   const itemProject = todoform.elements.projects
   const itemTitle = todoform.elements.title
   const itemDescription = todoform.elements.description
-  const itemDueDate= todoform.elements.dueDate
+  const itemDueDate = todoform.elements.dueDate
   const itemPriority = todoform.elements.priority
   const todoItem = new ToDoItem(itemTitle.value,itemDescription.value,itemDueDate.value,itemPriority.value)  
   const projTable = document.querySelector(`.${itemProject.value}.items table`)
@@ -38,10 +38,18 @@ function createTodoItem(){
   dueDateData.textContent = todoItem.dueDate
   const priorityData =  document.createElement('td');
   priorityData.textContent = todoItem.priority
+    // Mark as completed
+  const completeBtn = document.createElement('input')
+  completeBtn.setAttribute('type','radio')
+  completeBtn.addEventListener('click',()=>{
+    itemRow.remove()
+  })
+ 
   // Add data to row
   itemRow.appendChild(descriptionData)
   itemRow.appendChild(dueDateData)
-  itemRow.appendChild(priorityData)
+  .appendChild(priorityData)
+  itemRow.appendChild(completeBtn)
   // Add to table
   projTable.appendChild(itemRow)
 };
@@ -104,3 +112,9 @@ window.onclick = function(event) {
     e.target.parentNode.parentNode.removeChild(e.target.closest('div'))
   }
 })
+
+
+
+
+
+

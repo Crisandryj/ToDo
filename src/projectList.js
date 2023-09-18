@@ -26,10 +26,12 @@ function createItemListTable (project){
   const itemDescriptionHead = document.createElement('th')
   const dueDateHead = document.createElement('th')
   const priorityHead = document.createElement('th')
+  const completeHead = document.createElement('th')
 // Append headers to row
   headerRow.appendChild(itemDescriptionHead).textContent = "Description"
   headerRow.appendChild(dueDateHead).textContent = "Due Date"
   headerRow.appendChild(priorityHead).textContent = "Priority"
+  headerRow.appendChild(completeHead).textContent = "Complete?"
 // Append with headers row to table
   itemContainer.appendChild(headerRow)
   proj.appendChild(itemContainer)
@@ -60,21 +62,6 @@ function addProjectToSideBar (project){
   projectName.textContent = project
 }
 
-
-
-
-
-
-
-  // const completeBtn = document.createElement('input')
-
-  // completeBtn.setAttribute('type','radio')
-
-  // completeBtn.addEventListener('click',()=>{
-  //  itemContainer.remove()
-  // })
-
-  // completeHead.appendChild(completeBtn)
 
 
 
