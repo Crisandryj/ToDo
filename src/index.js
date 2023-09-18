@@ -48,10 +48,10 @@ function createTodoItem(){
   })
  
   // Add data to row
+  itemRow.appendChild(completeData)
   itemRow.appendChild(descriptionData)
   itemRow.appendChild(dueDateData)
   itemRow.appendChild(priorityData)
-  itemRow.appendChild(completeData)
   // Add to table
   projTable.appendChild(itemRow)
 };
