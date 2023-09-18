@@ -28,10 +28,10 @@ function createItemListTable (project){
   const priorityHead = document.createElement('th')
   const completeHead = document.createElement('th')
 // Append headers to row
-  headerRow.appendChild(itemDescriptionHead).textContent = "Description"
-  headerRow.appendChild(dueDateHead).textContent = "Due Date"
-  headerRow.appendChild(priorityHead).textContent = "Priority"
-  headerRow.appendChild(completeHead).textContent = "Complete?"
+  headerRow.appendChild(itemDescriptionHead)
+  headerRow.appendChild(dueDateHead)
+  headerRow.appendChild(priorityHead)
+  headerRow.appendChild(completeHead)
 // Append with headers row to table
   itemContainer.appendChild(headerRow)
   proj.appendChild(itemContainer)
