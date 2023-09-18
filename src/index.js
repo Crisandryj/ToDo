@@ -39,7 +39,9 @@ function createTodoItem(){
   const priorityData =  document.createElement('td');
   priorityData.textContent = todoItem.priority
     // Mark as completed
+  const completeData =  document.createElement('td');
   const completeBtn = document.createElement('input')
+  completeData.appendChild(completeBtn)
   completeBtn.setAttribute('type','radio')
   completeBtn.addEventListener('click',()=>{
     itemRow.remove()
@@ -48,8 +50,8 @@ function createTodoItem(){
   // Add data to row
   itemRow.appendChild(descriptionData)
   itemRow.appendChild(dueDateData)
-  .appendChild(priorityData)
-  itemRow.appendChild(completeBtn)
+  itemRow.appendChild(priorityData)
+  itemRow.appendChild(completeData)
   // Add to table
   projTable.appendChild(itemRow)
 };
