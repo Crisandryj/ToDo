@@ -113,10 +113,11 @@ window.onclick = function(event) {
  content.addEventListener('click', e =>
  {
   if (e.target.matches("button")){
-    // Trying to select first element of collection to delete project from sidebar
-    console.log(document.getElementsByClassName(e.target.parentNode.className).first())
+    // Remove project from list
+    const projectInList = document.getElementsByClassName(e.target.parentNode.className)[0]
+    projectInList.remove()
+    // Remove project from content
     e.target.parentNode.parentNode.removeChild(e.target.closest('div'))
-
   }
 })
 
