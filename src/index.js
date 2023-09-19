@@ -34,8 +34,6 @@ function createTodoItem(){
   // table data
   const descriptionData = document.createElement('td');
   descriptionData.textContent = todoItem.description
-  const dueDateData =  document.createElement('td');
-  dueDateData.textContent = todoItem.dueDate
   const priorityData =  document.createElement('td');
   priorityData.textContent = todoItem.priority
     // Mark as completed
@@ -46,11 +44,9 @@ function createTodoItem(){
   completeBtn.addEventListener('click',()=>{
     itemRow.remove()
   })
- 
   // Add data to row
   itemRow.appendChild(completeData)
   itemRow.appendChild(descriptionData)
-  itemRow.appendChild(dueDateData)
   itemRow.appendChild(priorityData)
   // Add to table
   projTable.appendChild(itemRow)
