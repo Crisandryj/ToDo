@@ -56,8 +56,8 @@ function addProjectToList (project){
 function addProjectToSideBar (project){
   const projectContainer = document.getElementById('myDropdown')
   const projectName = document.createElement('a')
-  projectContainer.classList.add(removeSpaces(project))
-  projectContainer.classList.add('items')
+  projectName.classList.add(removeSpaces(project))
+  projectName.classList.add('items')
   projectContainer.appendChild(projectName)
   projectName.textContent = project
 }
