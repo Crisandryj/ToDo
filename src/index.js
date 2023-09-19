@@ -41,6 +41,12 @@ function createTodoItem(){
   const completeBtn = document.createElement('input')
   completeData.appendChild(completeBtn)
   completeBtn.setAttribute('type','radio')
+  // Change priority color
+  if(itemPriority.value >= 50){
+    completeBtn.style.borderColor = "red";
+  }else{
+    completeBtn.style.borderColor = "blue";
+  }
   completeBtn.addEventListener('click',()=>{
     itemRow.remove()
   })
