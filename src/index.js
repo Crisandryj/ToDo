@@ -35,7 +35,6 @@ function createTodoItem(){
   const descriptionData = document.createElement('td');
   descriptionData.textContent = todoItem.description
   const priorityData =  document.createElement('td');
-  priorityData.textContent = todoItem.priority
     // Mark as completed
   const completeData =  document.createElement('td');
   const completeBtn = document.createElement('input')
