@@ -114,7 +114,7 @@ window.onclick = function(event) {
  {
   if (e.target.matches("button")){
     // Remove project from list
-    const projectInList = document.getElementsByClassName(e.target.parentNode.className)[0]
+    const projectInList = document.getElementsByClassName(e.target.parentNode.parentNode.className)[0]
     projectInList.remove()
     // Remove project from content
     e.target.parentNode.parentNode.removeChild(e.target.closest('div'))

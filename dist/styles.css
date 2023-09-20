@@ -153,3 +153,10 @@ input[type='radio'] {
   outline: none;
   border: 3px solid
 }
+.heading{
+  display: flex;
+  flex-direction: row;
+}
+.heading > button{
+  margin-left: 10px;
+}
