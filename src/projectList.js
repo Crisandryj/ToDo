@@ -41,16 +41,19 @@ function createItemListTable (project){
 function addProjectToList (project){
   const projectContainer = document.createElement('div')
   const projectName = document.createElement('h2')
+  const headingContainer = document.createElement('div')
+  headingContainer.classList.add("heading")
   projectContainer.classList.add(removeSpaces(project))
   projectContainer.classList.add('items')
   content.appendChild(projectContainer)
-  projectContainer.appendChild(projectName)
+  headingContainer.appendChild(projectName)
+  projectContainer.appendChild(headingContainer)
   projectName.textContent = project
   // Remove button
   const button = document.createElement('button')
   button.setAttribute('id',project)
   button.textContent = "Remove Project"
-  projectContainer.appendChild(button)
+  headingContainer.appendChild(button)
 }
 
 function addProjectToSideBar (project){
